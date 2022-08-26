@@ -1,4 +1,6 @@
-const socket = io('http://localhost:8000');
+// const socket = io('http://localhost:8000');
+const hostname = '0.0.0.0'
+const socket = io(`http://localhost:${hostname}`);
 
 const form = document.getElementById('send-container')
 const messageInput = document.getElementById('messageInp')

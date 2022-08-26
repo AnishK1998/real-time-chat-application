@@ -1,5 +1,7 @@
 //this index.js file is for node server
-const io = require('socket.io')(8000);
+// const io = require('socket.io')(8000);
+const hostname = '0.0.0.0'
+const io = require('socket.io')(hostname);
 const users = {}
 
 io.on('connection', socket =>{
